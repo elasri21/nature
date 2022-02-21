@@ -1,0 +1,223 @@
+:root {
+  --blue: #6495ed;
+  --green: #7fff00;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(164, 185, 243);
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 250px;
+  background-color: var(--blue);
+  overflow: hidden;
+}
+
+.mountain {
+  position: absolute;
+  background-color: var(--green);
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  bottom: -50px;
+}
+.one {
+  bottom: -55px;
+  transform: rotate(40deg);
+  left: -20px;
+}
+
+.two {
+  left: 80px;
+}
+.two::after {
+  content: "";
+  width: 150px;
+  height: 30px;
+  background-color: var(--green);
+  position: absolute;
+  left: 40px;
+  transform: rotate(-40deg);
+  bottom: 110px;
+}
+
+.three {
+  left: 310px;
+}
+.four {
+  width: 120px;
+  height: 120px;
+  right: -40px;
+  bottom: -60px;
+  transform: rotate(60deg);
+}
+
+.left-cloud,
+.right-cloud {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.left-cloud {
+  left: -50px;
+  top: 50px;
+  transform: rotate(5deg);
+}
+.right-cloud {
+  top: 60px;
+  left: 250px;
+  transform: rotate(-5deg);
+}
+
+.cloud {
+  width: 70px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sc-1 {
+  top: -10px;
+  left: 10px;
+}
+
+.sc-2 {
+  top: -14px;
+  left: 70px;
+}
+.sc-3 {
+  top: -6px;
+  left: 130px;
+  transform: rotate(10deg);
+}
+
+.sc-4 {
+  right: -25px;
+  bottom: -5px;
+}
+
+.sc-5 {
+  left: 100px;
+  bottom: -14px;
+}
+.sc-6 {
+  left: 39px;
+  bottom: -10px;
+}
+
+.sc-9 {
+  top: -16px;
+  left: 20px;
+}
+
+.sc-10 {
+  top: -14px;
+  left: 83px;
+}
+
+.sc-11 {
+  top: -10px;
+  left: 140px;
+}
+
+.sc-12 {
+  right: -25px;
+  bottom: -5px;
+}
+
+.sc-13 {
+  left: 90px;
+  bottom: -10px;
+}
+.sc-14 {
+  left: 30px;
+  bottom: -10px;
+}
+
+.tree {
+  width: 20px;
+  height: 100px;
+  background-color: #cd853f;
+  position: absolute;
+  bottom: 0px;
+  left: 72px;
+  z-index: -2;
+}
+.midle-tree {
+  left: 230px;
+}
+.right-tree {
+  left: 395px;
+}
+.tree::before {
+  content: "";
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  top: -20px;
+  left: 10px;
+}
+.tree::after {
+  content: "";
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  top: -20px;
+  right: 10px;
+}
+.left-leave {
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  top: -10px;
+  right: 10px;
+}
+.left-leave::before {
+  content: "";
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  top: -20px;
+  left: 50px;
+}
+.left-leave::after {
+  content: "";
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  top: -10px;
+  right: 5px;
+}
+
+.leaves {
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: -4;
+}
